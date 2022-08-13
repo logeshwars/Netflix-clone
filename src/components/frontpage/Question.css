@@ -1,0 +1,78 @@
+    .question {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        padding: 5% 0px;
+        gap: 50px;
+    }
+    
+    .question h1 {
+        font-size: 3.5rem;
+    }
+    
+    .accordation {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .acclist {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    
+    .acclist div {
+        background-color: var(--secondary);
+        display: flex;
+        width: 63vw;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        padding: 25px 40px;
+    }
+    
+    .acclist div:last-child {
+        flex-direction: column;
+        gap: 15px;
+        height: 0;
+        display: none;
+        font-size: 1.8rem;
+    }
+    
+    .acclist div:first-child h3 {
+        font-weight: normal;
+    }
+    
+    .showQuestion div:last-child {
+        height: max-content;
+        display: flex;
+        transition: all 0.2s ease-out;
+    }
+    
+    .showQuestion Add {
+        background-color: rebeccapurple;
+    }
+    
+    .showQuestion .spin {
+        transform: rotate(40deg);
+        transition: all 0.2s;
+    }
+    
+    @media screen and (max-width:740px) {
+        .question h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .acclist div {
+            width: calc(100vw - 40px);
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+        .acclist p {
+            font-size: 1rem;
+        }
+    }

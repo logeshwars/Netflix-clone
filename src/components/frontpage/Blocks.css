@@ -1,0 +1,58 @@
+.blocks {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.block {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 60px;
+    min-height: 70vh;
+    width: calc(100vw - 140px);
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.block div {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block p {
+    width: 500px;
+    font-size: 1.6rem
+}
+
+.block h1 {
+    font-size: 3rem;
+}
+
+.block img {
+    width: 450px;
+    flex: 4;
+}
+
+@media screen and (max-width:740px) {
+    .block {
+        padding: 10px 10px;
+        width: calc(100vw - 20px);
+        text-align: center;
+    }
+    .block p {
+        width: initial;
+        font-size: 1rem
+    }
+    .block h1 {
+        font-size: 1.5rem;
+    }
+    .block img {
+        width: 100%;
+    }
+}

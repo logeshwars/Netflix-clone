@@ -1,0 +1,111 @@
+.navbar {
+    top: 0px;
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    align-items: center;
+}
+
+.navbar svg {
+    fill: rgb(227, 0, 0);
+    width: 120px;
+}
+
+.signIn {
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-weight: 600;
+    width: max-content;
+    height: max-content;
+    padding: 8px 20px;
+}
+
+.signIn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.rightNav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbarSelectContain {
+    border: 1px solid rgb(110, 109, 109);
+    color: white;
+    padding: 3px 0px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.327);
+}
+
+.navabarSelect {
+    outline: none;
+    border: none;
+    color: rgb(123, 119, 119);
+    font-size: inherit;
+    appearance: none;
+    width: max-content;
+    font-weight: 500;
+    padding: 3px 25px;
+    background-color: transparent;
+    padding: none;
+}
+
+.navbarSelectContain::after {
+    content: "\002bc6";
+    font-size: inherit;
+    position: absolute;
+    top: 50%;
+    margin-left: 80px;
+    transform: translate(0, -55%);
+    pointer-events: none;
+}
+
+.navbarSelectContain::before {
+    content: '\01f310';
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -55%);
+    font-size: inherit;
+}
+
+@media screen and (max-width:740px) {
+    .navbar svg {
+        width: 90px;
+    }
+    .navbar {
+        padding: 20px 15px;
+        width: calc(100% - 30px);
+    }
+    .navbarSelectContain {
+        font-size: .8rem;
+        padding: 1px 0px;
+    }
+    .rightNav {
+        gap: 10px;
+    }
+    .navabarSelect {
+        padding: 0px 15px;
+    }
+    .navbarSelectContain::after {
+        margin-left: 60px;
+    }
+    .signIn {
+        font-size: 0.8rem;
+    }
+}

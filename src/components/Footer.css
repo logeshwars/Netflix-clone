@@ -1,0 +1,66 @@
+.footer {
+    padding: 100px 13vw 10px 13vw;
+}
+
+.footerSection2 {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerSection2>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerSection2>div>a {
+    text-decoration: none;
+    color: rgb(155, 154, 154);
+    line-height: 30px;
+    font-size: 0.8rem;
+}
+
+.footerSection2>div>a:hover {
+    text-decoration: underline;
+}
+
+.service {
+    border: 1px solid rgb(155, 154, 154);
+    color: rgb(143, 140, 140);
+    background-color: transparent;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.service:hover {
+    color: white;
+}
+
+.footer div p {
+    margin-top: 15px;
+    color: rgb(155, 154, 154);
+    font-size: 0.75rem;
+}
+
+.footer div p {
+    margin-top: 15px;
+    color: rgb(155, 154, 154);
+    font-size: 0.75rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    margin-right: 20px;
+}
+
+@media screen and (max-width:740px) {
+    .footer {
+        padding: 100px 10px;
+    }
+}

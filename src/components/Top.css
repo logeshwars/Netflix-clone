@@ -1,0 +1,156 @@
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.left img{
+    width: 110px;
+    padding: 0;
+    object-fit: contain;
+
+}
+.left{
+     display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38vw;
+    padding-left: 40px;
+}
+.left a ,.right a{
+    text-decoration:none;
+    color:rgb(231, 231, 231);
+    font-size:14px;
+    font-weight: 400;
+}
+
+.MuiSvgIcon-root{
+    color:white;
+    font-size: 28px !important;
+
+}
+.right{
+     display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+    padding-right: 40px;
+
+}
+.right img{
+    border-radius: 5px;
+}
+
+.menu{
+    display: none;
+}
+.left .leftmenu{
+    display: flex;
+    width: 75%;
+    padding: 0;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.dropdown,.profileMenu{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    padding: 0;
+    width: fit-content;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.747);
+    margin-top:10px;
+    font-size: large;
+  
+    
+    list-style-type: none;
+    border: 0.001em solid rgb(102, 102, 102);
+    border-top:2px solid white;
+    transition: 1s;
+    }
+    .dropdown{
+        left: 20px;
+    
+        text-align: center;
+    }
+    .dropdown li{
+        font-weight: 400 ;
+        padding:12px 70px;
+       
+    }
+    .profileMenu{
+        right: 65px;
+        
+    }
+    .profileMenu li{
+        font-weight: 400 ;
+        padding:5px 50px 5px 12px;
+       
+    }
+    .profileMenu hr{
+        border-bottom:none;
+        border-color: rgb(66, 66, 66);
+    border-top:0.1rem solid rgb(66, 66, 66);
+    
+    }
+    .dropdown li a{
+        color: rgb(194, 194, 194);
+        font-weight: 400;
+    }
+    .dropdown::before,.profileMenu::before{
+        content: ' ';
+        width: 0; 
+      height: 0; 
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid rgb(255, 255, 255);
+        position: absolute;
+        top: -9px;
+    }
+    .profileMenu::before{
+      right: 8px;
+    }
+        
+.actives{
+    color: white !important;
+    font-weight: bolder !important;
+}
+.dropdown li:hover{
+background-color: rgba(199, 195, 195, 0.075)
+}
+
+.withPimage{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.withPimage img{
+    width: 30px;
+    margin-right: 5px;
+}
+@media (max-width:870px){
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small !important;
+        margin-left: 18px;
+    }
+.mainMenu{
+display: none !important;
+}
+.left{
+    padding-left: 30px;
+}
+.right{
+    padding-right:30px;
+}
+.left img{
+    width: 30%;
+  
+
+}
+}
+ 

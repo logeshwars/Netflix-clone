@@ -1,0 +1,60 @@
+.row h2{
+    color: rgb(233, 233, 233);
+    font-size:18px;
+    padding-left: 40px;
+    position: relative;
+
+}
+.slider{
+     overflow: visible;
+    display: flex;
+    align-items: center;
+}
+.rowContainer{
+    display: flex;
+    height: 150px;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 40px;
+    transition-duration: 2s;
+ 
+
+}
+.rowOuter{
+    width: 100%;
+    height: max-content;
+    overflow-x:visible;
+
+}
+.rowOuter::-webkit-scrollbar{
+    display: none;
+}
+
+.arrowLeft,.arrowRight{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.089);
+    border: none;
+    height: 150px;
+    display: none;
+    z-index: 1;
+  
+
+}
+.arrowRight{
+    right: 0;
+      margin-top:auto;
+    }
+    .arrowLeft{
+    left: 0;
+
+    }
+    .row:hover {
+    cursor: pointer;
+    
+}
+.mui{
+    transform: scale(1.3);
+}
+
